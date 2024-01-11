@@ -8,6 +8,7 @@ import { getFirestore } from "firebase/firestore";
 const firebaseConfig = {
   apiKey: "AIzaSyDzqLsflCgyo4TMDg5UlA7KBUaxuYcHKDw",
   authDomain: "blogging-app-debba.firebaseapp.com",
+  databaseURL: "https://blogging-app-debba-default-rtdb.firebaseio.com",
   projectId: "blogging-app-debba",
   storageBucket: "blogging-app-debba.appspot.com",
   messagingSenderId: "605713750141",
@@ -17,3 +18,6 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
+
+// const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
